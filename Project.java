@@ -4,7 +4,7 @@ public class Project{
         System.out.println("Hello, World!");
         try{
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/event_planning","root","Niranjana@mysql");
+            Connection connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/event_planning","root","mysql1234");
             Statement statement = connection.createStatement();
             ResultSet resultSet=statement.executeQuery("SELECT * FROM caterer");
             while (resultSet.next()) {
